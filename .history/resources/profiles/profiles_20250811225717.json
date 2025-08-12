@@ -1,0 +1,107 @@
+[
+  {
+    "name": "기본 프로필",
+    "device": "qwwqf",
+    "resolution": "1028",
+    "dpi": "320"
+  },
+  {
+    "name": "scrcpy v3.3.1 전체옵션 예시",
+    "connection": {
+      "selectUsb": false,
+      "selectTcpip": false,
+      "serial": "",
+      "tcpip": "",
+      "port": "27183:27199",
+      "forceAdbForward": false,
+      "tunnelHost": "localhost",
+      "tunnelPort": 0
+    },
+    "video": {
+      "videoBitRate": "8M",
+      "maxSize": 0,
+      "maxFps": null,
+      "crop": "",
+      "videoCodec": "h264",
+      "videoEncoder": "",
+      "videoCodecOptions": "",
+      "videoBuffer": 0,
+      "angle": 0,
+      "displayId": 0,
+      "displayOrientation": 0,
+      "captureOrientation": 0,
+      "orientation": null,
+      "renderDriver": "auto"
+    },
+    "audio": {
+      "audioSource": "output",
+      "audioCodec": "opus",
+      "audioEncoder": "",
+      "audioCodecOptions": "",
+      "audioBitRate": "128K",
+      "audioBuffer": 50,
+      "audioOutputBuffer": 5,
+      "audioDup": false,
+      "requireAudio": false
+    },
+    "input": {
+      "keyboard": "sdk",
+      "mouse": "sdk",
+      "gamepad": "disabled",
+      "mouseBind": "",
+      "noKeyRepeat": false,
+      "noMouseHover": false,
+      "noControl": false,
+      "preferText": false,
+      "rawKeyEvents": false,
+      "legacyPaste": false,
+      "noClipboardAutosync": false,
+      "otg": false
+    },
+    "virtualDisplay": {
+      "newDisplay": false,
+      "displayImePolicy": "fallback",
+      "noVdSystemDecorations": false,
+      "noVdDestroyContent": false,
+      "videoSource": "display",
+      "cameraId": "",
+      "cameraFacing": "",
+      "cameraSize": "",
+      "cameraAr": "",
+      "cameraFps": 30,
+      "cameraHighSpeed": false
+    },
+    "window": {
+      "fullscreen": false,
+      "alwaysOnTop": false,
+      "windowBorderless": false,
+      "windowTitle": "scrcpy",
+      "windowX": "auto",
+      "windowY": "auto",
+      "windowWidth": "auto",
+      "windowHeight": "auto",
+      "disableScreensaver": false,
+      "turnScreenOff": false,
+      "powerOffOnClose": false,
+      "stayAwake": false,
+      "noPowerOn": false,
+      "screenOffTimeout": null
+    },
+    "recording": {
+      "record": "",
+      "recordFormat": "",
+      "recordOrientation": 0
+    },
+    "utility": {
+      "startApp": "",
+      "timeLimit": "",
+      "printFps": false,
+      "shortcutMod": "lalt,lsuper",
+      "verbosity": "info",
+      "pushTarget": "/sdcard/Download/",
+      "killAdbOnClose": false,
+      "noCleanup": false,
+      "pauseOnExit": false
+    }
+  }
+]

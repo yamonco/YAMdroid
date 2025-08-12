@@ -1,0 +1,65 @@
+[
+  {
+    "name": "데스크탑모드",
+    "connection": {},
+    "video": {},
+    "id": "9030a73c-41e2-42ce-a9b1-e67db0c74162",
+    "windowBorderless": false,
+    "virtualDisplay": true,
+    "noControl": false,
+    "vdDpi": "230",
+    "vdResolution": "1920x1080",
+    "maxSize": "1920",
+    "fullscreen": false,
+    "alwaysOnTop": false
+  },
+  {
+    "id": "84463bb6-b751-4802-bec4-c95855cb65b0",
+    "name": "fqwegqwq24",
+    "usb": false,
+    "tcpip": true,
+    "forceAdb": true,
+    "serial": "21424",
+    "addr": "",
+    "portRange": "",
+    "host": "",
+    "port": ""
+  },
+  {
+    "id": "3689da50-656a-4e04-8931-1fbb8c6e0c8a",
+    "name": "dsgdgs22",
+    "usb": false,
+    "tcpip": false,
+    "forceAdb": false,
+    "serial": "",
+    "addr": "",
+    "portRange": "",
+    "host": "",
+    "port": ""
+  },
+  {
+    "id": "cfac15ff-d495-437c-b8c9-80d15378fe7a",
+    "name": "dehrt",
+    "usb": false,
+    "tcpip": false,
+    "forceAdb": false,
+    "serial": "",
+    "addr": "",
+    "portRange": "",
+    "host": "",
+    "port": "",
+    "windowTitle": "215125215"
+  },
+  {
+    "id": "b95c6689-854f-4742-8443-82f9eeeda5fb",
+    "name": "qwffqw",
+    "usb": false,
+    "tcpip": false,
+    "forceAdb": false,
+    "serial": "",
+    "addr": "",
+    "portRange": "",
+    "host": "",
+    "port": ""
+  }
+]

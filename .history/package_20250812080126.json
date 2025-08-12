@@ -1,0 +1,76 @@
+{
+  "name": "electron-svelte",
+  "version": "0.0.1",
+  "description": "A simple electron/svelte/electron-builder template for building cross platform apps.",
+  "main": "dist/electron/app.js",
+  "scripts": {
+    "dev:pwsh:renderer": "cd renderer; $env:VITE_PORT=5173; npx vite --port $env:VITE_PORT --strictPort",
+    "dev:pwsh:electron": "cd electron; tsc --watch",
+    "dev:pwsh:start": "$env:VITE_PORT=5173; npm run start:electron",
+    "package": "npm run build:renderer && npm run build:electron && electron-builder",
+    "build:electron": "cd electron && tsc",
+    "build:renderer": "cd renderer && npm run build",
+    "watch:electron": "cd electron && tsc --watch",
+    "start:electron": "wait-on tcp:localhost:5173 && electron .",
+    "dev": "concurrently --kill-others \"set VITE_PORT=5173&& npm run dev:renderer\" \"npm run watch:electron\" \"set VITE_PORT=5173&& npm run start:electron\"",
+    "dev:renderer": "cd renderer && npx vite --port %VITE_PORT% --strictPort",
+    "format": "prettier --write .",
+    "rebuild": "electron-rebuild",
+    "postinstall": "electron-rebuild"
+  },
+  "build": {
+    "appId": "your.app.id",
+    "productName": "YourProductName",
+    "directories": {
+      "output": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "path/to/your/icon/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "path/to/your/icon/icon.icns"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tlaceby/electron-svelte.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tlaceby/electron-svelte/issues"
+  },
+  "homepage": "https://github.com/tlaceby/electron-svelte#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "electron": "^28.2.3",
+    "electron-builder": "^24.9.1",
+    "electron-rebuild": "^3.2.9",
+    "prettier": "^3.2.5",
+    "prettier-plugin-svelte": "^3.2.1",
+  "vite": "^4.5.0",
+  "@sveltejs/vite-plugin-svelte": "4.0.4"
+  },
+  "dependencies": {
+  "@sveltejs/vite-plugin-svelte": "4.0.4",
+    "electron-reload": "^2.0.0-alpha.1",
+    "koffi": "^2.13.0",
+    "node-apk": "^1.2.1",
+    "ref-napi": "^3.0.3",
+    "svelte": "^5.38.0",
+    "svelte-preprocess": "^6.0.3",
+    "uuid": "^11.1.0",
+    "wait-on": "^8.0.4"
+  }
+}
