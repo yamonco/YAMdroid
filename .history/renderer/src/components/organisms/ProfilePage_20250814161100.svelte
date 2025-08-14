@@ -196,7 +196,7 @@ function cancelRemove() {
       bind:value={newProfileName}
       on:keydown={(e) => { if (e.key === 'Enter') handleAddProfile(); }}
     />
-  <button class="btn btn-primary" on:click={handleAddProfile}>➕ 추가</button>
+    <button class="btn btn-primary" on:click={handleAddProfile}>+ 추가</button>
   </div>
   
   <ProfileBackupBar />
